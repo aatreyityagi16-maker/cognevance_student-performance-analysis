@@ -1,9 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("student_performance_dataset.csv")
+df = pd.read_csv('student_performance_dataset.csv')
 
-subjects = ["Math_Marks", "Science_Marks", "English_Marks"]
+subjects = ['Math_Marks', 'Science_Marks', 'English_Marks']
 df["Average_Marks"] = df[subjects].mean(axis=1)
 
 print("Average marks by subject:")
